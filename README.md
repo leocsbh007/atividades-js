@@ -1,4 +1,4 @@
-https://leocsbh007.github.io/atividades-js/
+<a href="[https://www.exemplo.com/documentacao](https://leocsbh007.github.io/atividades-js/)" target="_blank" rel="noopener noreferrer">https://leocsbh007.github.io/atividades-js/</a>
 
 # Aprender Fazendo
 
