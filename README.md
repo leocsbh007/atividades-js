@@ -38,7 +38,7 @@ Os projetos individuais incluem:
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone [URL_do_seu_repositorio]
+    git clone https://github.com/leocsbh007/atividades-js.git
     ```
 2.  **Abra o `index.html` no seu navegador:**
     *   Navegue até a pasta onde você clonou o projeto.
@@ -80,5 +80,5 @@ Este projeto é licenciado sob a [Sua Licença].
 ## Autor
 
 Leonardo Souza
-[\[Seu GitHub\]](https://github.com/leocsbh007)
-[\[Seu E-mail (opcional)\]](https://www.linkedin.com/in/leonardo-souza-2a83b11a/)
+[\[GitHub\]](https://github.com/leocsbh007)
+[\[Linkedin\]](https://www.linkedin.com/in/leonardo-souza-2a83b11a/)
