@@ -1,0 +1,16 @@
+[
+    {
+      "nome": "Sanduíche de Frango",
+      "descricao": "Frango grelhado com ovo, queijo e picles",
+      "preco": 25,
+      "imagem": "https://images.mrcook.app/recipe-image/01912447-4c0a-7700-8dec-b87457650a96",
+      "id": "1"
+    },
+    {
+      "nome": "Hambúrguer Gigante",
+      "descricao": "Hambúrguer de carne moída grande, queijo e bacon",
+      "preco": 40,
+      "imagem": "https://www.minhareceita.com.br/app/uploads/2021/03/shutterstock_1751836019-scaled.jpg",
+      "id": "2"
+    }
+  ]

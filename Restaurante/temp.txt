@@ -1,0 +1,24 @@
+async function carregarCardapio(){
+    const url = 'https://6748c2725801f51535921487.mockapi.io/api/cardapio/';
+    const resposta = await fetch(url);
+    const infromacoesItens = await resposta.json();
+    const divDadosCardapio = document.querySelector('#dados-gato');
+    divDadosCardapio.innerHTML = '';
+
+    infromacoesItens.forEach(dadosCardapio => {
+        const estruturaHtmlLivro = `
+        <p>Altura da Imagem: ${dadosCardapio.height}</p>
+        <p>Largura da Imagem: ${dadosCardapio.width}</p>        
+        <img src="${dadosCardapio.url}" alt="" height="${dadosCardapio.height}" width="${dadosCardapio.width}">
+        <hr>
+        `
+        divDadosCardapio.innerHTML += estruturaHtmlLivro;
+    }) 
+}
+
+setTimeout(function() {
+    location.reload();
+    
+  }, 10000);
+
+carregarCardapio()
