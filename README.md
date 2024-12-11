@@ -1,4 +1,6 @@
-<a href="https://leocsbh007.github.io/atividades-js/" target="_blank" rel="noopener noreferrer">https://leocsbh007.github.io/atividades-js/</a>
+Bem-vindo ao meu projeto!
+
+Para saber mais sobre mim, visite meu [Aprender Fazendo](<a href="https://leocsbh007.github.io/atividades-js/" target="_blank" rel="noopener noreferrer">https://leocsbh007.github.io/atividades-js/</a>).
 
 # Aprender Fazendo
 
