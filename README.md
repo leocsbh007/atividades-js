@@ -27,6 +27,7 @@ Os projetos individuais incluem:
 *   **Atividade 3:** Uma breve descrição da terceira atividade.
 *   **Atividade 01 JSON:** Uma breve descrição da atividade usando JSON.
 *   **Restaurante:** Uma breve descrição da atividade do restaurante.
+*   **Site Embarcado:** Pagina Inicial de um site de equipamntos de Mineração e Eletrônica.
 *   ...e muito mais!
 
 ## Tecnologias Utilizadas
@@ -62,6 +63,7 @@ aprender-fazendo/
 ├── atividade3.html # Atividade 3
 ├── atividade_01_json.html # Atividade JSON
 ├── restaurante.html # Restaurante
+├── index.html # Site Embarcado
 └── README.md # Este arquivo de documentação
 
 ## Próximos Passos
