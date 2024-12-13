@@ -1,7 +1,7 @@
 async function carregarProdutos(page = 1, itemsPerPage = 8) {
     try {
         // 1. Buscar os dados do JSON:
-        const response = await fetch('/atividades-js/Embarcado/json/produtos.json'); // Busca o arquivo produtos.json
+        const response = await fetch('/json/produtos.json'); // Busca o arquivo produtos.json
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
