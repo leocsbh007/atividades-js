@@ -68,7 +68,7 @@ body {
 /* Banner */
 /* Estiliza o banner principal da página */
 .banner {
-    background: linear-gradient(rgba(0, 44, 77, 0.8), rgba(0, 44, 77, 0.8)), url('/img/Mercedes-Arocs1.jpg') center/cover no-repeat; /* Fundo com gradiente sobre imagem */
+    background: linear-gradient(rgba(0, 44, 77, 0.8), rgba(0, 44, 77, 0.8)), url('/Embarcado/img/Mercedes-Arocs1.jpg') center/cover no-repeat; /* Fundo com gradiente sobre imagem */
     color: white; /* Cor do texto no banner */
     text-align: center; /* Centraliza o texto horizontalmente */
     padding: 100px 20px; /* Espaçamento interno no banner */
