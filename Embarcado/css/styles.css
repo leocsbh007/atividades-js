@@ -1,0 +1,250 @@
+/* Reset e Fonte */
+/* Define o estilo base para o corpo da página, incluindo margens, preenchimento, fonte e cores */
+body {
+    margin: 0; /* Remove a margem padrão de navegadores */
+    padding: 0; /* Remove o preenchimento padrão de navegadores */
+    font-family: 'Roboto', sans-serif; /* Define a fonte principal da página */
+    color: #333; /* Define a cor padrão do texto */
+    background-color: #f9f9f9; /* Define a cor de fundo da página */
+}
+
+/* Cabeçalho */
+/* Estiliza o cabeçalho, criando uma barra horizontal com elementos alinhados */
+.header {
+    background-color: #002c4d; /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto do cabeçalho */
+    padding: 10px 20px; /* Espaçamento interno no cabeçalho */
+    display: flex; /* Exibe os itens no cabeçalho como um flexbox */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: space-between; /* Distribui os itens horizontalmente com espaço entre eles */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve abaixo do cabeçalho */
+}
+
+.container {
+    display: flex; /* Permite o uso de Flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: flex-start; /* Espaça os itens na horizontal */
+    max-width: 1200px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 0 20px; /* Adiciona preenchimento lateral */    
+}
+
+/* o logo não esta dentro de uma div agora, então tem que estilizar o container*/
+.logo-container{
+    display: flex; /* Para o flexbox funcionar no container do logo */
+    align-items: center; /* Centraliza o logo verticalmente */    
+}
+
+/* Define a altura padrão do logo no cabeçalho */
+.logo {        
+    height: 50px; /* Define a altura do logo para garantir consistência */
+    padding: 0 60px; /* Adiciona preenchimento lateral */    
+}
+
+/* Navegação */
+/* Estiliza a lista de navegação no cabeçalho */
+.nav ul {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    gap: 20px; /* Define o espaçamento horizontal entre os itens */
+    margin: 0; /* Remove a margem padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+/* Links de navegação */
+/* Define o estilo dos links na navegação */
+.nav ul li a {
+    color: white; /* Define a cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: 700; /* Define o peso da fonte como negrito */
+    transition: color 0.3s; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+/* Links ao passar o mouse */
+.nav ul li a:hover {
+    color: #ffa500; /* Altera a cor dos links para laranja ao passar o mouse */
+}
+
+/* Banner */
+/* Estiliza o banner principal da página */
+.banner {
+    background: linear-gradient(rgba(0, 44, 77, 0.8), rgba(0, 44, 77, 0.8)), url('/img/Mercedes-Arocs1.jpg') center/cover no-repeat; /* Fundo com gradiente sobre imagem */
+    color: white; /* Cor do texto no banner */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    padding: 100px 20px; /* Espaçamento interno no banner */
+}
+
+/* Título no banner */
+.banner h1 {
+    font-size: 3rem; /* Define o tamanho da fonte do título */
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+}
+
+/* Texto no banner */
+.banner p {
+    font-size: 1.2rem; /* Define o tamanho da fonte do parágrafo */
+    margin-bottom: 30px; /* Adiciona espaçamento abaixo do texto */
+}
+
+/* Botão principal */
+/* Define o estilo dos botões principais */
+.btn {
+    background-color: #ffa500; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    text-decoration: none; /* Remove o sublinhado de links */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s; /* Transição suave ao mudar a cor de fundo */
+}
+
+/* Botão principal ao passar o mouse */
+.btn:hover {
+    background-color: #ff8800; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Botão secundário */
+/* Estilo adicional para botões com cor diferente */
+.btn-sec {
+    background-color: #005f99; /* Cor de fundo azul escuro */
+}
+
+/* Botão secundário ao passar o mouse */
+.btn-sec:hover {
+    background-color: #004c7a; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+/* Destaques */
+/* Define o estilo da seção de destaques */
+.destaques {
+    padding: 50px 20px; /* Espaçamento interno na seção */
+    background-color: #f0f0f0; /* Cor de fundo cinza claro */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Título na seção de destaques */
+.destaques h2 {
+    margin-bottom: 40px; /* Adiciona espaçamento abaixo do título */
+}
+
+/* Layout dos cartões */
+.cards {
+    display: flex; /* Exibe os cartões em linha */
+    justify-content: center; /* Centraliza os cartões horizontalmente */
+    gap: 20px; /* Espaçamento entre os cartões */
+}
+
+/* Estilo de cada cartão */
+.card {
+    background-color: white; /* Cor de fundo do cartão */
+    padding: 20px; /* Espaçamento interno no cartão */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve abaixo do cartão */
+    width: 300px; /* Largura fixa do cartão */
+}
+
+/* Produtos */
+/* Estiliza a seção de produtos */
+.produtos {
+    padding: 50px 20px; /* Espaçamento interno na seção */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Grade de produtos */
+.produtos-grid {
+    display: grid; /* Define o layout como grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define colunas responsivas */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo de cada produto */
+.produto-item {
+    background-color: white; /* Cor de fundo do produto */
+    padding: 20px; /* Espaçamento interno no produto */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Imagens dos produtos */
+.produto-item img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse os limites */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+/* Contato */
+/* Estiliza a seção de contato */
+.contato {
+    padding: 50px 20px; /* Espaçamento interno na seção */
+    background-color: #002c4d; /* Cor de fundo azul escuro */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Campos do formulário */
+.contato input, .contato textarea {
+    width: 100%; /* Largura total do campo */
+    max-width: 500px; /* Limita a largura máxima do campo */
+    padding: 10px; /* Espaçamento interno no campo */
+    margin: 10px auto; /* Margem acima e abaixo, com centralização */
+    display: block; /* Garante que cada campo ocupe uma linha separada */
+    border: none; /* Remove as bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Estiliza o botão de envio no formulário de contato */
+.contato button {
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilização para hover no botão de envio */
+.contato button:hover {
+    background-color: #ff8800;
+}
+
+/* Rodapé */
+/* Estiliza o rodapé com fundo escuro e texto centralizado */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #001f36;
+    color: white;
+    font-size: 0.9rem;
+}
+
+#pagination {
+    display: flex; /* Organiza os links em linha */
+    justify-content: center; /* Centraliza os links */
+    margin-top: 20px; /* Adiciona margem superior */
+}
+
+#pagination a {
+    display: inline-block; /* Permite definir padding e margem */
+    padding: 8px 12px; /* Adiciona preenchimento */
+    margin: 0 4px; /* Adiciona margem horizontal entre os links */
+    border: 1px solid #ddd; /* Adiciona borda */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #333; /* Define a cor do texto */
+    background-color: #fff; /* Define a cor de fundo */
+    border-radius: 4px; /* Adiciona borda arredondada */
+    cursor: pointer; /* Mostra que o link é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#pagination a:hover {
+    background-color: #f0f0f0; /* Muda a cor ao passar o mouse */
+}
+
+#pagination a.active {
+    background-color: #007bff; /* Muda a cor de fundo do link da página atual */
+    color: #fff; /* Muda a cor do texto da página atual*/
+    border-color: #007bff; /* Define a cor da borda da página atual */
+}

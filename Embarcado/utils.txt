@@ -1,0 +1,21 @@
+exemplo de inclusão de itens no html:
+
+        <div class="produtos-grid">
+            <div class="produto-item">
+                <img src="https://via.placeholder.com/150" alt="Produto">
+                <h3>Inclinômetro Digital</h3>
+                <p>R$ 999,00</p>
+            </div>
+            <div class="produto-item">
+                <img src="https://via.placeholder.com/150" alt="Produto">
+                <h3>Sensor de Tomada de Força</h3>
+                <p>R$ 799,00</p>
+            </div>
+            <div class="produto-item">
+                <img src="https://via.placeholder.com/150" alt="Produto">
+                <h3>Limitador de Velocidade</h3>
+                <p>R$ 1.299,00</p>
+            </div>
+        </div>
+
+

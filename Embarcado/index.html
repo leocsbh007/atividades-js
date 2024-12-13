@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embarcado - Página Inicial</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-conatiner">
+                <img src="img/logo-menor.png" alt="Logo Embarcado" class="logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Inovação e Eficiência em Implementos Industriais</h1>
+            <p>Peças hidráulicas, pneumáticas, inclinômetros, sensores e muito mais.</p>
+            <a href="#produtos" class="btn">Explore Nossos Produtos</a>
+            <a href="#servicos" class="btn btn-sec">Conheça Nossos Serviços</a>
+            <a href="../index.html" class="btn">Voltar ATIVIDADES</a>
+        </div>
+    </section>
+
+    <section class="destaques">
+        <h2>Soluções em Destaque</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Inclinômetros</h3>
+                <p>Máxima precisão e durabilidade para operações seguras.</p>
+            </div>
+            <div class="card">
+                <h3>Sensor de Tomada de Força</h3>
+                <p>Controle eficiente para implementos basculantes.</p>
+            </div>
+            <div class="card">
+                <h3>Limitador de Velocidade</h3>
+                <p>Segurança em cada movimento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produtos-grid"></div>
+        <div id="pagination"></div>
+    </section>
+
+    <section id="contato" class="contato">
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato e saiba como podemos ajudar sua operação!</p>
+        <form>
+            <input type="text" placeholder="Seu Nome">
+            <input type="email" placeholder="Seu Email">
+            <textarea placeholder="Sua Mensagem"></textarea>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Embarcado. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
