@@ -64,6 +64,7 @@ aprender-fazendo/
 ├── atividade_01_json.html # Atividade JSON
 ├── restaurante.html # Restaurante
 ├── index.html # Site Embarcado
+├── index.html # Mercado Livre Infinity
 └── README.md # Este arquivo de documentação
 
 ## Próximos Passos
