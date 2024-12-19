@@ -25,7 +25,7 @@ async function carregaProdutos(){
   dadosProdutos.forEach(infoProduto => {
     const estruturaHtmlProduto = `
     <section class="cartao-item">
-        <img src="${infoProduto.imagem}" alt="" />
+        <img src="${infoProduto.imagem}" alt="" height="100" width="100"/>
         <h3>${infoProduto.nome}</h3>
         <p class="preco-item">R$ ${infoProduto.preco}</p>
         <button class="botao-comprar">Comprar</button><br><br>
