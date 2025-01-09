@@ -50,6 +50,12 @@ Os projetos individuais incluem:
 3.  **Explore os projetos:**
     *   Clique nos links para visualizar os projetos individuais.
 
+4.  **Base da Api:**
+    *   A base que estou usando para consumo de API:
+    *   CRIANDO OS DADOS NA MOCKAPI.IO - https://mockapi.io/
+    *   1 . **Mercado Infity:** - https://6748c2725801f51535921487.mockapi.io/api/produtos
+    *   2 . **Restaurante:** - [https://6748c2725801f51535921487.mockapi.io/api/produtos](https://6748c2725801f51535921487.mockapi.io/api/cardapio/)
+
 ## Estrutura do Projeto
 
 aprender-fazendo/
