@@ -1,6 +1,6 @@
 // Função para abrir o formulário
 function abrirFormulario() {
-    document.getElementById("modalCadastroProduto").style.display = "block";
+    document.getElementById("modalCadastroProduto").style.display = "block";    
   }
   
 // Função para fechar o formulário
@@ -10,7 +10,7 @@ function fecharFormulario() {
   
 // Fechar o modal se o usuário clicar fora da caixa de conteúdo
 window.onclick = function (evento) {
-  if (evento.target == document.getElementById("modalCadastroProduto")) {
+  if (evento.target == document.getElementById("modalCadastroProduto")) {    
     fecharFormulario();
   }
 };
@@ -51,6 +51,30 @@ async function excluirProduto(id){
   alert('Produto Excluido com Sucesso!!!');
 }
 
+
+async function cadastrarProdutos() {
+  const nomeProduto = document.getElementById('nomeProduto').value;
+  const precoProduto = document.getElementById('precoProduto').value;
+  const imagemProduto = document.getElementById('imagemProduto').value;
+
+  const produto = {
+    nome : nomeProduto,
+    preco : precoProduto,
+    imagem : imagemProduto
+  };
+  
+  const url = 'https://6748c2725801f51535921487.mockapi.io/api/produtos';
+
+  const resposta = await fetch(url, {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(produto)  
+  });
+
+  fecharFormulario();  
+}
 
 carregaProdutos();
   
