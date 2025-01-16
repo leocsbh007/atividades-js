@@ -16,13 +16,22 @@ window.onclick = function (evento) {
 };
 
 
-async function carregaProdutos(){
+
+const inputBarraPesquisar = document.querySelector('#pesquisar');
+inputBarraPesquisar.addEventListener('input', (evento) => {
+  const produtoDigitado = inputBarraPesquisar.value
+  carregaProdutos(produtoDigitado)
+});
+
+async function carregaProdutos(filtro=''){
   const url = 'https://6748c2725801f51535921487.mockapi.io/api/produtos';
   const resposta = await fetch(url);
-  const dadosProdutos = await resposta.json();
-  const mainGradeProdutos = document.querySelector('#grade-itens');
+  const dadosProdutos = await resposta.json();  
 
-  dadosProdutos.forEach(infoProduto => {
+  const produtosFiltrados = dadosProdutos.filter(produto => produto.nome.includes(filtro));
+  
+  const mainGradeProdutos = document.querySelector('#grade-itens');
+  produtosFiltrados.forEach(infoProduto => {
     const estruturaHtmlProduto = `
     <section class="cartao-item">
         <img src="${infoProduto.imagem}" alt="" height="100" width="100"/>
@@ -38,11 +47,11 @@ async function carregaProdutos(){
 
 async function excluirProduto(id){
   const url = `https://6748c2725801f51535921487.mockapi.io/api/produtos/${id}`;
-  const resposta = fetch(url,{
+  const resposta = await fetch(url,{
     method: 'DELETE'
   });
 
-  console.log(id);
+  console.log(resposta);
 
   if(!(await resposta).ok){
 
@@ -53,28 +62,44 @@ async function excluirProduto(id){
 
 
 async function cadastrarProdutos() {
-  const nomeProduto = document.getElementById('nomeProduto').value;
-  const precoProduto = document.getElementById('precoProduto').value;
-  const imagemProduto = document.getElementById('imagemProduto').value;
+  try {   
+    const nomeProduto = document.getElementById('nomeProduto').value;
+    const precoProduto = document.getElementById('precoProduto').value;
+    const imagemProduto = document.getElementById('imagemProduto').value;
 
-  const produto = {
-    nome : nomeProduto,
-    preco : precoProduto,
-    imagem : imagemProduto
-  };
-  
-  const url = 'https://6748c2725801f51535921487.mockapi.io/api/produtos';
+    if (!nomeProduto || !precoProduto || !imagemProduto){
+      throw new Error('Preencha todo os campaos');      
+    }
+    const produto = {
+      nome : nomeProduto,
+      preco : precoProduto,
+      imagem : imagemProduto
+    };
+    
+    const url = 'https://6748c2725801f51535921487.mockapi.io/api/produtos';
 
-  const resposta = await fetch(url, {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(produto)  
-  });
+    const resposta = await fetch(url, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(produto)  
+    });
+    if (!resposta.ok){
+      throw new Error('Problema para assessar o Servidor', resposta.statusText);
+      
+    }
 
-  fecharFormulario();  
+    alert('Produto Adicionado com Sucesso!');    
+    location.reload(true);
+    fecharFormulario();  
+  }
+  catch (erro){
+    console.error('Erro ao cadastrar o produto', erro.message);
+    
+  }
 }
+
 
 carregaProdutos();
   
