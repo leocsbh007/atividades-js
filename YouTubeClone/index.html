@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+    <link rel="icon" href="assets/youtube.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Menu Lateral -->
+      <aside class="sidebar">
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-fire"></i><span>Shorts</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-users"></i><span>Subscriptions</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-user"></i><span>You</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-history"></i><span>History</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-list"></i><span>Playlists</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-video"></i><span>Your videos</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-clock"></i><span>Watch later</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-thumbs-up"></i><span>Liked videos</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-compass"></i><span>Explore</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-chart-line"></i><span>Trending</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-music"></i><span>Music</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-film"></i><span>Movies</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-broadcast-tower"></i><span>Live</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-gamepad"></i><span>Gaming</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-newspaper"></i><span>News</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-football-ball"></i><span>Sports</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-graduation-cap"></i><span>Courses</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-podcast"></i><span>Podcasts</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Conteúdo Principal -->
+      <main class="content">
+        <!-- Header -->
+        <header class="header">
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquisar" />
+            <button onclick="submitVideo()">Incluir Vídeo</button>
+          </div>
+          <div class="user-actions">
+            <button class="notification-bell">🔔</button>
+            <img
+              src="assets/thumbs/profile.png"
+              alt="Foto de perfil"
+              class="profile-pic"
+            />
+          </div>
+        </header> 
+
+        <!-- Seção de Vídeos -->
+        <section class="video-grid" id="videoGrid">
+          <!-- Vídeos serão carregados dinamicamente aqui -->
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
