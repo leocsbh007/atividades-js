@@ -41,7 +41,7 @@ async function carregaProdutos(filtro=''){
         <button class="botao-adicionar-produto" onclick="excluirProduto('${infoProduto.id}')">Excluir Produto</button>
       </section>
     `
-    mainGradeProdutos.innerHTML += estruturaHtmlProduto;
+    mainGradeProdutos.innerHTML = estruturaHtmlProduto;
   });
 }
 
